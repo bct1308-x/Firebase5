@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardMovie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp"
+        android:clickable="true"
+        android:focusable="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+        <!-- Title -->
+        <TextView
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Movie Title"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Duration -->
+        <TextView
+                android:id="@+id/duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="120 min"
+                android:textColor="#666"
+                android:textSize="14sp"
+                app:layout_constraintTop_toBottomOf="@id/title"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="4dp"/>
+
+        <!-- Book Button -->
+        <Button
+                android:id="@+id/bookBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Book"
+                android:textAllCaps="false"
+                android:backgroundTint="#03DAC5"
+                android:textColor="#000"
+                app:layout_constraintTop_toBottomOf="@id/duration"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="8dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
